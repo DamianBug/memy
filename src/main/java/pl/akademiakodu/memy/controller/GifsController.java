@@ -29,6 +29,12 @@ public class GifsController {
         return "favorites";
     }
 
+    @GetMapping("/gifs/search")
+    public String search(@RequestParam String q){
+        System.out.println("dupa"+q);
+        return "home";
+    }
+
 //    @RequestMapping("/getPhoto/{id}")
 //    public @ResponseBody
 //    byte[] getPhoto(@PathVariable("id") final String id) throws IOException {
