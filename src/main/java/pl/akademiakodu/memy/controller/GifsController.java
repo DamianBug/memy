@@ -5,7 +5,6 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import pl.akademiakodu.memy.dao.GifsDao;
 
-
 /**
  * Created by macie on 02.08.2017.
  */
@@ -13,10 +12,10 @@ import pl.akademiakodu.memy.dao.GifsDao;
 public class GifsController {
     GifsDao gifDao = new GifsDao();
 
-    @GetMapping("/showgifs")
-    public String show( ModelMap modelMap){
-        return "home";
-    }
+//    @GetMapping("/showgifs")
+//    public String show( ModelMap modelMap){
+//        return "home";
+//    }
     @GetMapping("/")
     public String hello( ModelMap modelMap){
         modelMap.addAttribute("gifs", gifDao.showall());
