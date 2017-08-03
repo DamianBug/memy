@@ -8,7 +8,16 @@ public class Gifs {
     private String name;
     private boolean favorite;
 
+    private String owner;
+
+
     private Long id;
+
+    public Gifs(String name, boolean favorite, String owner) {
+        this.name = name;
+        this.favorite = favorite;
+        this.owner = owner;
+    }
 
     public Gifs(String name) {
         this.name = name;
@@ -52,5 +61,12 @@ public class Gifs {
         this.favorite = favorite;
     }
 
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
 }
 

@@ -10,12 +10,12 @@ public class GifsDao implements ShowGifs {
     static List<Gifs> gifs = new ArrayList<>();
 
     static {
-        gifs.add(new Gifs("android-explosion", true));
-        gifs.add(new Gifs("ben-and-mike", false));
-        gifs.add(new Gifs("book-dominos", false));
-        gifs.add(new Gifs("compiler-bot", true));
-        gifs.add(new Gifs("cowboy-coder", false));
-        gifs.add(new Gifs("infinite-andrew", false));
+        gifs.add(new Gifs("android-explosion", true,"Maciek"));
+        gifs.add(new Gifs("ben-and-mike", false, "Bartek"));
+        gifs.add(new Gifs("book-dominos", false, "Magda"));
+        gifs.add(new Gifs("compiler-bot", true, "Czołgowski"));
+        gifs.add(new Gifs("cowboy-coder", false, "Toldo"));
+        gifs.add(new Gifs("infinite-andrew", false, "Grzybu"));
     }
 
     @Override
