@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Created by macie on 02.08.2017.
- */
+ */////////////////////////////////////
 public class ArticleDaoImpl {
 
     static List<Article> articles = new ArrayList<>();
