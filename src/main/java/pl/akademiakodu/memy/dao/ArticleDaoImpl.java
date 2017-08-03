@@ -1,7 +1,5 @@
 package pl.akademiakodu.memy.dao;
-
 import pl.akademiakodu.memy.model.Article;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,5 +17,4 @@ public class ArticleDaoImpl {
         articles.add(new Article("uyuyuy", "eeeee"));
         articles.add(new Article("Waaak", "Alfaaaaa"));
     }
-
 }

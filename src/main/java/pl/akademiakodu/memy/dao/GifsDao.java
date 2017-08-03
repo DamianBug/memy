@@ -18,6 +18,7 @@ public class GifsDao implements ShowAllGifs {
         gifs.add(new Gifs("cowboy-coder", false));
         gifs.add(new Gifs("infinite-andrew", false));
     }
+
     @Override
     public List<Gifs> showall() {
         return gifs;
@@ -36,13 +37,15 @@ public class GifsDao implements ShowAllGifs {
         return gifsfav;
     }
 
-
-
-
-
-
-
-
-    }
+    /*public Gifs findName(String name) {
+        Gifs search = null;
+        for (Gifs image : gifs) {
+            if (image.getName().equalsIgnoreCase(name)) {
+                search = image;
+            }
+        }
+        return search;
+    }*/
+}
 
 
