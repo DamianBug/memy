@@ -5,12 +5,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import pl.akademiakodu.memy.dao.CateDao;
 import pl.akademiakodu.memy.dao.GifsDao;
-
 import pl.akademiakodu.memy.model.Gifs;
 
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * Created by macie on 02.08.2017.
  */
@@ -31,12 +31,6 @@ public class GifsController {
         return "favorites";
     }
 
-    @GetMapping("/gifs/search")
-    public String search(@RequestParam String q) {
-        System.out.println("dupa" + q);
-        return "home";
-    }
-
     @GetMapping("/categories")
     public String categories( ModelMap modelMap){
         modelMap.addAttribute("categories", cateDao.showCate());
@@ -46,8 +40,11 @@ public class GifsController {
     @GetMapping("/gifs/search")
     public String search(@RequestParam String q, ModelMap modelMap){
         List<Gifs> gifses = new ArrayList<Gifs>();
-        gifses.add(gifDao.findName(q));
+        if ( gifDao.findName(q)!=null)
+            gifses.add(gifDao.findName(q));
         modelMap.addAttribute("gifs", gifses);
         return "home";
     }
+
 }
+
