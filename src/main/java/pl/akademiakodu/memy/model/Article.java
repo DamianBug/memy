@@ -10,7 +10,6 @@ public class Article {
         this.description = description;
     }
 
-
     public String getTitle() {
         return title;
     }

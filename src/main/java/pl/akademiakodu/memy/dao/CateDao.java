@@ -1,5 +1,4 @@
 package pl.akademiakodu.memy.dao;
-
 import pl.akademiakodu.memy.model.Cate;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ public class CateDao implements ShowCate {
         cates.add(new Cate("Zwierze", 1L));
         cates.add(new Cate("Czolg", 2L));
         cates.add(new Cate("Dupapsia", 3L));
-
     }
 
     @Override

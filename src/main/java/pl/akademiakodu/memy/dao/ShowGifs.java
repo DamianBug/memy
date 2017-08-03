@@ -12,7 +12,6 @@ import java.util.List;
 public interface ShowGifs {
 
     List<Gifs> showall();
-
     List<Gifs> showfav();
 
     Gifs findName(String name);
