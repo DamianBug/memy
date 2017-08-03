@@ -10,5 +10,4 @@ import java.util.List;
 public interface ShowCate {
 
     List<Cate> showCate();
-//    List<Gifs> findByName(String name);
 }
