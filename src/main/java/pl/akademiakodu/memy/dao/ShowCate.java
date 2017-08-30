@@ -1,6 +1,7 @@
 package pl.akademiakodu.memy.dao;
 
 import pl.akademiakodu.memy.model.Cate;
+import pl.akademiakodu.memy.model.Gifs;
 
 import java.util.List;
 
@@ -10,4 +11,5 @@ import java.util.List;
 public interface ShowCate {
 
     List<Cate> showCate();
+    List<Gifs> cateName(Long id);
 }

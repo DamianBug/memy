@@ -7,11 +7,16 @@ public class Gifs {
 
     private String name;
     private boolean favorite;
-
     private String owner;
-
-
     private Long id;
+    private Cate categoryName;
+
+    public Gifs(String name, boolean favorite, String owner, Cate categoryName) {
+        this.name = name;
+        this.favorite = favorite;
+        this.owner = owner;
+        this.categoryName = categoryName;
+    }
 
     public Gifs(String name, boolean favorite, String owner) {
         this.name = name;
@@ -23,10 +28,8 @@ public class Gifs {
         this.name = name;
     }
 
-    public Gifs(String name, Long id) {
-        this.name = name;
-        this.id = id;
-    }
+
+
 
     public Long getId() {
         return id;
@@ -67,6 +70,14 @@ public class Gifs {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    public Cate getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(Cate categoryName) {
+        this.categoryName = categoryName;
     }
 }
 

@@ -1,10 +1,12 @@
 package pl.akademiakodu.memy.controller;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import pl.akademiakodu.memy.dao.CateDao;
 import pl.akademiakodu.memy.dao.GifsDao;
+import pl.akademiakodu.memy.model.Cate;
 import pl.akademiakodu.memy.model.Gifs;
 
 
@@ -52,6 +54,15 @@ public class GifsController {
         modelMap.addAttribute("gifs", gifses);
         return "home";
     }
+
+//    @GetMapping("/category/{id}")
+//    public String category(@ModelAttribute Cate cat, ModelMap modelMap){
+//        modelMap.addAttribute("categories", cateDao.showCate());
+//        modelMap.addAttribute("images", gifDao.findName(cat.getId()));
+//        return "category";
+//    }
+
+
 
 }
 
